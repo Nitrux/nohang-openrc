@@ -10,11 +10,6 @@ depend() {
     need mountall
 }
 
-start_pre() {
-    checkpath --directory --owner root:root /var/run
-    checkpath --file --owner root:root ${pidfile}
-}
-
 start() {
     ebegin "Starting ${description}"
     start-stop-daemon --start --exec ${command} --background --make-pidfile --pidfile ${pidfile} -- ${command_args}
