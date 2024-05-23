@@ -1,3 +1,9 @@
+nohang-openrc (0.0.2)  nitrux; urgency=medium
+
+  * Fix wrong service dependency.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Thu, 23 May 2024 14:53:00 -0500
+
 nohang-openrc (0.0.1)  nitrux; urgency=medium
 
   * Create package.

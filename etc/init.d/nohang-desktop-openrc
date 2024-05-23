@@ -7,7 +7,7 @@ pidfile="/var/run/nohang-desktop.pid"
 command_user="root"
 
 depend() {
-    need localmount
+    need mountall
 }
 
 start_pre() {
