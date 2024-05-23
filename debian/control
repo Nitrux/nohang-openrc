@@ -9,7 +9,7 @@ Homepage: http://nxos.org
 
 Package: nohang-openrc
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, openrc, nohangd
+Depends: ${shlibs:Depends}, ${misc:Depends}, openrc, nohang
 Conflicts: systemd, systemd-sysv
 Description: Package to add nohang configuration for OpenRC.
  This package will add the boot scripts to use nohang
