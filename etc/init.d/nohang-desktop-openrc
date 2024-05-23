@@ -1,0 +1,28 @@
+#!/sbin/openrc-run
+
+description="Sophisticated low memory handler"
+command="/usr/sbin/nohang"
+command_args="--monitor --config /etc/nohang/nohang-desktop.conf"
+pidfile="/var/run/nohang-desktop.pid"
+command_user="root"
+
+depend() {
+    need localmount
+}
+
+start_pre() {
+    checkpath --directory --owner root:root /var/run
+    checkpath --file --owner root:root ${pidfile}
+}
+
+start() {
+    ebegin "Starting ${description}"
+    start-stop-daemon --start --exec ${command} --background --make-pidfile --pidfile ${pidfile} -- ${command_args}
+    eend $?
+}
+
+stop() {
+    ebegin "Stopping ${description}"
+    start-stop-daemon --stop --pidfile ${pidfile}
+    eend $?
+}

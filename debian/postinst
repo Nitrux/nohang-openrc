@@ -1,0 +1,13 @@
+#! /bin/bash
+
+#   Add service file to runlevel directory
+
+/bin/cp /etc/init.d/nohang-desktop-openrc /etc/runlevels/default || true
+
+#   Add service to runlevel
+
+rc-update add nohang-desktop-openrc default
+
+#   Update services list
+
+rc-update -u
