@@ -1,3 +1,9 @@
+nohang-openrc (0.0.3)  nitrux; urgency=medium
+
+  * Refactor and rename service files.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Thu, 17 Jul 2025 16:50:00 -0500
+
 nohang-openrc (0.0.2)  nitrux; urgency=medium
 
   * Fix wrong service dependency.
