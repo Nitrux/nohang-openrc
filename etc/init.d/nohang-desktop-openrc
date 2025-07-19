@@ -1,6 +1,4 @@
 #!/sbin/openrc-run
-# Copyright (c) 2007-2021 The Gentoo Foundation
-# Distributed under the terms of the GNU General Public License v2
 
 description="Starts the nohang low memory handler"
 command="/usr/sbin/nohang"
