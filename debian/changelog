@@ -1,3 +1,9 @@
+nohang-openrc (0.0.5)  nitrux; urgency=medium
+
+  * Fix path to config file.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Fri, 06 Feb 2026 03:05:00 -0500
+
 nohang-openrc (0.0.4)  nitrux; urgency=medium
 
   * Use supervise-daemon for daemons.

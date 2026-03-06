@@ -2,7 +2,7 @@
 
 description="Starts the nohang low memory handler"
 command="/usr/sbin/nohang"
-command_args="--config /etc/nohang/nohang-desktop.conf --monitor"
+command_args="--config /etc/nohang/nohang.conf --monitor"
 supervisor=supervise-daemon
 
 depend() {
